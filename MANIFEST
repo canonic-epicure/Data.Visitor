@@ -1,19 +1,16 @@
-Build.PL
 Changes
-doc/html/Data/Visitor.html
-doc/html/Data/Visitor/Class.html
-doc/mmd/Data/Visitor.txt
-doc/mmd/Data/Visitor/Class.txt
 inc/Module/Build/Functions.pm
 inc/Module/Build/Functions/DSL.pm
+inc/Module/Build/JSAN.pm
 inc/Module/Build/JSAN/Installable.pm
 inc/Module/JSAN.pm
 inc/Module/JSAN/DSL.pm
 INSTALL
 lib/Data/Visitor.js
-lib/Data/Visitor/Class.js
-MANIFEST			This list of files
+lib/Data/Visitor.mmd
+MANIFEST
 META.json
 README.md
-t/010_sanity.t.js
+t/010_basics.t.js
 t/index.html
+TODO
