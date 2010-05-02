@@ -1,6 +1,6 @@
 StartTest(function(t) {
     
-	t.plan(1)
+	t.plan(15)
     
     var async0 = t.beginAsync()
     
@@ -10,6 +10,27 @@ StartTest(function(t) {
         t.diag('Sanity')
         
         t.ok(Data.Visitor, "Data.Visitor is here")
+        
+        var data1 = {}
+        var data2 = []
+        var data3 = 10
+        var data4 = true
+        
+        t.ok(data1 === Data.Visitor.my.visit(data1), "Visiting don't modify the data #1")
+        t.ok(data2 === Data.Visitor.my.visit(data2), "Visiting don't modify the data #2")
+        t.ok(data3 === Data.Visitor.my.visit(data3), "Visiting don't modify the data #3")
+        t.ok(data4 === Data.Visitor.my.visit(data4), "Visiting don't modify the data #4")
+        
+        
+        //======================================================================================================================================================================================================================================================
+        t.diag('N-arity')
+        
+        var res = Data.Visitor.my.visit(data1, data2, data3, data4)
+        
+        t.ok(data1 === res[0], "Visiting don't modify the data #1")
+        t.ok(data2 === res[1], "Visiting don't modify the data #2")
+        t.ok(data3 === res[2], "Visiting don't modify the data #3")
+        t.ok(data4 === res[3], "Visiting don't modify the data #4")
         
         
         //======================================================================================================================================================================================================================================================
@@ -36,12 +57,9 @@ StartTest(function(t) {
                 },
                 
                 
-                visitArray      : function () { arrayCounter++ },
-                
-                visitInstance   : function () { instanceCounter++ },
-                
-                visitNotSeenObject : function () { objectCounter++ }
-                
+                visitArray              : function () { arrayCounter++ },
+                visitJooseInstance      : function () { instanceCounter++ },
+                visitNotSeen            : function () { objectCounter++ }
             }
         })
         

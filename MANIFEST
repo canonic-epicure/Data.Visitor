@@ -1,4 +1,6 @@
 Changes
+doc/html/Data/Visitor.html
+doc/mmd/Data/Visitor.txt
 inc/Module/Build/Functions.pm
 inc/Module/Build/Functions/DSL.pm
 inc/Module/Build/JSAN.pm
