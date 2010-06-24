@@ -2,17 +2,17 @@ Name
 ====
 
 
-Data.Visitor - Some clever yet compact description
+Data.Visitor - Visitor style traversal of JavaScript data structures
 
 
 SYNOPSIS
 ========
 
-        Class("Data.Visitor", {
+        Class("Data.Visitor.Class", {
         
         })
         
-        var instance = new Data.Visitor({
+        var instance = new Data.Visitor.Class({
         })
         
 
@@ -20,12 +20,46 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-`Data.Visitor` is a stub for JSAN modules.
+`Data.Visitor.Class` is a stub for Joose class.
 
 
+ISA
+===
 
-EXAMPLES
-========
+None.
+
+
+DOES
+====
+
+None.
+
+
+TRAITS
+======
+
+None.
+
+
+ATTRIBUTES
+==========
+
+### attributeName
+
+> `AttributeType attributeName`
+
+> Attribute description
+
+
+METHODS
+=======
+
+### methodName
+
+> `method signature`
+
+> Method description
+
 
 
 GETTING HELP
@@ -33,7 +67,7 @@ GETTING HELP
 
 This extension is supported via github issues tracker: <http://github.com/SamuraiJack/Data-Visitor/issues>
 
-For general Joose questions you can also visit #joose on irc.freenode.org or the forum at: <http://joose.it/forum>
+For general Joose questions you can also visit #joose on irc.freenode.org or the forum at: [http://joose.it/forum](http://joose.it/forum)
  
 
 
@@ -50,14 +84,14 @@ BUGS
 
 All complex software has bugs lurking in it, and this module is no exception.
 
-Please report any bugs through the web interface at <http://github.com/SamuraiJack/Data-Visitor/issues>
+Please report any bugs through the web interface at [http://github.com/SamuraiJack/Data-Visitor/issues](http://github.com/SamuraiJack/Data-Visitor/issues)
 
 
 
 AUTHORS
 =======
 
-Nickolay Platonov <nplatonov@cpan.org>
+Nickolay Platonov [nplatonov@cpan.org](mailto:nplatonov@cpan.org)
 
 
 
