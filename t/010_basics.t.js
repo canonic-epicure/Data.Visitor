@@ -1,7 +1,5 @@
 StartTest(function(t) {
     
-	t.plan(15)
-    
     var async0 = t.beginAsync()
     
     use('Data.Visitor', function () {
@@ -91,6 +89,8 @@ StartTest(function(t) {
         t.ok(instanceCounter    == 1, "Correct number of instances visited")
         t.ok(valuesCounter      == 9, "Correct number of values visited")
         
+        
+        t.done()
         
         t.endAsync(async0)
     })
