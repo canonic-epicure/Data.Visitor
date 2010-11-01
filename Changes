@@ -1,7 +1,8 @@
 Revision history for Data.Visitor
 
-
 {{ $NEXT }}
+
+    - release for `npm`
 
 0.01      2010-10-11 16:12
 
