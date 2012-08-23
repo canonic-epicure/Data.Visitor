@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/SamuraiJack/Data.Visitor.png)](http://travis-ci.org/SamuraiJack/Data.Visitor)
 Name
 ====
 
